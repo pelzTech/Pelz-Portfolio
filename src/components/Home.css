@@ -113,11 +113,7 @@ body{
   gap: 20px;
 }
 
-.services-grid {
-  display: flex; /* Changed from grid to flex */
-  flex-wrap: wrap; /* Allows cards to wrap to next line */
-  gap: 20px;
-}
+
 
 /* Responsive Media Queries for Services Grid */
 @media (max-width: 1200px) {
