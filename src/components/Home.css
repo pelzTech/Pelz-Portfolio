@@ -1,0 +1,195 @@
+/* General Container */
+body{
+  background-color: #E7D3BB;
+}
+.home-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.welcome-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.welcome-buttons {
+  gap: 20px;
+  display: flex;             /* Optional: Align buttons in a row if you have multiple */
+  justify-content: center;   /* Centering the button in parent container */
+}
+
+.btn {
+  display: flex;             /* Use flexbox for the button */
+  align-items: center;       /* Center items vertically */
+  padding: 10px 20px;  
+  list-style: none;  
+  text-decoration: none;   /* Add padding for better spacing */
+  background-color: #61dafb; /* Background color for the button */
+  color: white;              /* Text color */
+  border: none;              /* Remove default border */
+  border-radius: 8px;       /* Rounded corners */
+  cursor: pointer;           /* Change cursor on hover */
+  font-size: 16px;          /* Font size */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darken background on hover */
+}
+
+.icon {
+  list-style: none;
+  text-decoration: none;
+  margin-right: 8px; /* Space between the icon and the text */
+  font-size: 10px;  /* Icon size */
+  color: white;      /* Icon color matches text color */
+}
+
+.welcome-text {
+  font-size: 1.2em;
+  color: #555;
+}
+
+
+.btn-hire {
+  color: black;
+  background-color: #61dafb;
+}
+
+.btn-hire:hover {
+  background-color: #0056b3;
+}
+
+.btn-download {
+  color: black;
+  background-color: #2c3e50;
+}
+
+.btn-download:hover {
+  background-color: rgba(0, 0, 255, 0.644);
+}
+
+/* Remove text decoration and list styles */
+.no-decor {
+  text-decoration: none;
+  list-style: none;
+}
+
+.no-decor button {
+  text-decoration: none; /* In case the button inherits styles */
+}
+
+
+/* Services Section */
+.services-section {
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.services-grid {
+  display: flex; /* Changed from grid to flex */
+  flex-wrap: wrap; /* Allows cards to wrap to next line */
+  gap: 20px;
+}
+
+/* Responsive Media Queries for Services Grid */
+@media (max-width: 1200px) {
+  .services-grid {
+    flex-direction: column; /* Adjust for smaller screens */
+  }
+}
+
+.service-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 15px;
+}
+
+.service-title {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-text {
+  font-size: 1em;
+  color: #333;
+}
+
+.experience-container {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.experience-title-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.experience-entry {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.experience-icon {
+  font-size: 24px;
+  color: #61dafb;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience-subtitle {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.experience-description {
+  font-size: 16px;
+  color: #333;
+}

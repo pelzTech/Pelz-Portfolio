@@ -1,0 +1,204 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif; /* Use a clean and professional font */
+  background-color: #f9f9f9; /* Light background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Skills Container */
+.skills-container {
+  max-width: 1200px; /* Limiting the max width for larger screens */
+  margin: 20px auto; /* Centering the container */
+  padding: 20px;
+  background: #ffffff; /* White background for the skills section */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title */
+.skills-title {
+  text-align: center; /* Center align title */
+  font-size: 2.5em; /* Larger font size for title */
+  color: #333; /* Darker color for readability */
+}
+
+/* Subtitle */
+.skills-subtitle {
+  text-align: center;
+  font-size: 1.5em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Skills List */
+.skills-list {
+  margin: 20px 0; /* Spacing around skill list */
+}
+
+/* Skill Item */
+.skill-item {
+  margin: 20px 0; /* Spacing between each skill */
+  padding: 15px; /* Padding around skill item */
+  border: 1px solid #ddd; /* Light border around each skill */
+  border-radius: 8px; /* Rounded corners on skill item */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Column direction for skill item */
+  align-items: flex-start; /* Align items to the start */
+  transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+.skill-item:hover {
+  transform: scale(1.02); /* Scale effect on hover */
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 1.5em; /* Emphasized font size for skill name */
+  color: #444; /* Slightly lighter than title for consistency */
+  margin-bottom: 10px; /* Margin below skill name */
+}
+
+/* Skill Details */
+.skill-details {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center align items */
+  margin-bottom: 10px; /* Margin below skill details */
+}
+
+/* Skill Percentage */
+.skill-percentage {
+  font-size: 1.2em; /* Font size for percentage text */
+  color: #666; /* Inactivation color for percentage */
+  margin-left: 10px; /* Space between icon and percentage text */
+}
+
+/* Skill Progress Bar */
+.skill-progress-bar {
+  width: 100%; /* Full width progress bar */
+  background: #ebebeb; /* Light background for the progress bar */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Cut off overflowed content */
+  height: 10px; /* Set height of the progress bar */
+  margin: 10px 0; /* Spacing around the progress bar */
+}
+
+/* Skill Progress */
+.skill-progress {
+  height: 100%; /* Full height of progress bar */
+  background-color: #7da2a9; /* Color for the progress */
+  width: 0; /* Dynamic width depending on skill level */
+  transition: width 0.3s ease; /* Smooth transition for progress bar */
+}
+
+/* Horizontal Rule */
+.hr-head {
+  border: none; /* Remove default border */
+  border-top: 1px solid #256b9a; /* Light line for horizontal rule */
+  margin: 20px 0; /* Space above and below */
+}
+
+/* Additional Skills */
+.additional-skills {
+  margin-top: 20px; /* Margin above additional skills section */
+}
+
+.additional-skills-title {
+  text-align: center;
+  font-size: 1.75em; /* Title font size */
+  margin-bottom: 15px; /* Margin below title */
+  color: #333; /* Color similar to main title */
+}
+
+.additional-skills-list {
+  display: flex; /* Flex layout for additional skills */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: center; /* Center align items */
+}
+
+/* Additional Skill Item */
+.additional-skill-item {
+  display: flex; /* Flex layout for additional skill item */
+  align-items: center; /* Center align */
+  margin: 10px; /* Margin around each item */
+  padding: 10px; /* Padding around item */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background: #fff; /* White background */
+  text-align: center; /* Center text alignment */
+  width: calc(25% - 20px); /* 4 items per row with margins */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.additional-skill-item:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Additional Skill Image */
+.additional-skill-image {
+  width: 40px; /* Fixed width for additional images */
+  height: 40px; /* Fixed height */
+  margin-right: 10px; /* Space between image and name */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .skills-title {
+    font-size: 2.2em; /* Slightly smaller title */
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-title {
+    font-size: 2em; /* Slightly smaller title for medium screens */
+  }
+
+  .skill-item {
+    flex-direction: row; /* Change direction for smaller screens */
+    justify-content: space-between; /* Space between skill name and details */
+  }
+
+  .additional-skill-item {
+    width: calc(33.33% - 20px); /* 3 items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    margin: 30px 10px; /* Adjusted margin for smaller screens */
+  }
+  .skills-title {
+    font-size: 1.8em; /* Slightly smaller title */
+  
+  }
+  
+
+  .skill-item {
+    flex-direction: column; /* Stack items for smaller screens */
+    align-items: flex-start; /* Align left for better readability */
+  }
+
+  .additional-skill-item {
+    width: calc(50% - 20px); /* 2 items per row on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .skills-container {
+    margin: 20px 5px; /* Further adjust margin on very small screens */
+  }
+
+  .skills-title {
+    font-size: 1.5em; /* Even smaller title */
+  }
+
+  .additional-skill-item {
+    width: 100%; /* Full width for additional skills on small screens */
+  }
+
+  .skill-details {
+    flex-direction: row; /* Change direction on small screens */
+    justify-content: space-between; /* Space even when stacked */
+  }
+}
