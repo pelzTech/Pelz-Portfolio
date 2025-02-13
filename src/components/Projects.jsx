@@ -8,6 +8,9 @@ import socialMediaImg from '../assets/images/store.png';
 import lmsPlatformImg from '../assets/images/job.png';
 import surveyAppImg from '../assets/images/fashion.png';
 import surveAppImg from '../assets/images/course.png';
+import survAppImg from '../assets/images/bookeasy.png';
+import survApppImg from '../assets/images/Home.png';
+
 
 const Projects = () => {
   const projectData = [
@@ -47,6 +50,22 @@ const Projects = () => {
       imageUrl: surveAppImg,
       projectLink: 'https://pelztech.github.io/online-course/',
     },
+
+    {
+      title: 'BookEase-App',
+      description:
+        'BookEase-App is an intuitive platform designed to simplify the booking process for users.',
+      imageUrl: survAppImg,
+      projectLink: 'https://pelzcode.pythonanywhere.com/',
+    },
+
+    {
+      title: 'Eminence-university',
+      description: 'Eminence University offers a wide range of academic programs designed to provide students with a high-quality education and foster their personal growth. Our university is committed to academic excellence, innovation, and student success.',
+      imageUrl: survApppImg,
+      projectLink: 'https://pelztech.github.io/Edu-web/',
+    }
+    
   ];
 
   return (
