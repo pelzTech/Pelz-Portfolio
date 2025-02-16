@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Footer.css'; // Import the CSS file
+import './Footer.css'; 
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer-content">
-      {/* Quick Links */}
+      
       <div className="footer-links">
         <h4>Quick Links</h4>
         <ul>
@@ -16,14 +16,14 @@ const Footer = () => (
         </ul>
       </div>
 
-      {/* Contact Information */}
+   
       <div className="footer-contact">
         <h4>Contact Information</h4>
         <p>Email: <a href="mailto:pelumiolugbeja3@gmail.com">pelzcode66@gmail.com</a></p>
         <p>Phone: <a href="tel:+2348077883836">+234-807-530-6443</a></p>
       </div>
 
-      {/* Social Media Links */}
+    
       <div className="footer-social">
         <h4>Connect with Me</h4>
         <ul>
@@ -33,7 +33,7 @@ const Footer = () => (
         </ul>
       </div>
 
-      {/* Contact Form */}
+    
       <div className="footer-form-container">
         <h4>Get in Touch</h4>
         <form className="footer-form">

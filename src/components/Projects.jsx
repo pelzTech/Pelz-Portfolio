@@ -2,7 +2,7 @@ import React from 'react';
 import { FaProductHunt } from "react-icons/fa6";
 import { MdArrowForward } from 'react-icons/md';
 import { motion } from 'framer-motion';
-import './Projects.css'; // Import the CSS file
+import './Projects.css'; 
 import portfolioImg from '../assets/images/book.png';
 import socialMediaImg from '../assets/images/store.png';
 import lmsPlatformImg from '../assets/images/job.png';

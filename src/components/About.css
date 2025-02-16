@@ -1,4 +1,4 @@
-/* General Styles */
+
 .about-container {
     max-width: 1100px;
     margin: auto;
@@ -59,7 +59,7 @@
     justify-content: center;
   }
   
-  /* Bio Section */
+ 
   .bio-section {
     flex: 2;
   }
@@ -70,8 +70,7 @@
     color: #444;
     margin-bottom: 1rem;
   }
-  
-  /* Information Section */
+
   .info-section {
     margin-top: 2rem;
     display: grid;
@@ -121,7 +120,7 @@
     text-decoration: underline;
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 768px) {
     .about-content {
       flex-direction: column;

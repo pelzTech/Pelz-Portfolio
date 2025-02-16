@@ -6,7 +6,7 @@ import profileImg from '../assets/images/landing.png';
 import webDevImg from '../assets/images/dev3.jpg';
 import appDevImg from '../assets/images/dev4.jpg';
 import uiUxImg from '../assets/images/dev5.jpg';
-import resumePdf from '../assets/pelzcode.pdf'; // Import your resume PDF
+import resumePdf from '../assets/pelzcode.pdf'; 
 import './Home.css';
 
 const Home = () => {
@@ -20,15 +20,15 @@ const Home = () => {
       if (index < fullText.length) {
         setWelcomeText(prev => prev + fullText.charAt(index));
         index++;
-        setTimeout(typeText, 50); // Adjust typing speed here (in milliseconds)
+        setTimeout(typeText, 50); 
       }
     };
 
     typeText();
 
-    // Cleanup function to avoid running the effect again if the component unmounts
+    
     return () => {
-      index = fullText.length; // Set index to length to stop typing
+      index = fullText.length; 
     };
   }, [fullText]);
 
@@ -39,7 +39,7 @@ const Home = () => {
       transition={{ duration: 1 }}
       className="home-container"
     >
-      {/* Welcome Section */}
+     
       <section className="welcome-section">
         <h2 className="welcome-title">Welcome to My Portfolio</h2>
         <motion.img
@@ -72,11 +72,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+     
       <section className="services-section">
         <h3 className="section-title">My Services</h3>
         <div className="services-grid">
-          {/* Service Card 1 */}
+         
           <motion.div whileHover={{ scale: 1.05 }} className="service-card">
             <img src={webDevImg} alt="Web Development" className="service-img" />
             <div className="service-content">
@@ -87,7 +87,7 @@ const Home = () => {
             </div>
           </motion.div>
 
-          {/* Service Card 2 */}
+         
           <motion.div whileHover={{ scale: 1.05 }} className="service-card">
             <img src={appDevImg} alt="App Development" className="service-img" />
             <div className="service-content">
@@ -98,7 +98,7 @@ const Home = () => {
             </div>
           </motion.div>
 
-          {/* Service Card 3 */}
+          
           <motion.div whileHover={{ scale: 1.05 }} className="service-card">
             <img src={uiUxImg} alt="UI/UX Design" className="service-img" />
             <div className="service-content">
@@ -111,7 +111,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Experience Section */}
+    
       <section className="experience-section">
         <h3 className="section-title">My Experience <FaLongArrowAltRight className="icon" /></h3>
         <div className="experience-list">
@@ -130,7 +130,7 @@ const Home = () => {
                </p>
             </div>
           </motion.div>
-          {/* Additional Experience Item */}
+         
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

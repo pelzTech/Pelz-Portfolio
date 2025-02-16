@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../assets/images/about.jpg';
+import profileImage from '../assets/images/port4.jpg';
 import './About.css';
 import { 
   BiPhone, 
@@ -8,7 +8,7 @@ import {
   BiBookOpen, 
   BiMessageSquareDetail 
 } from 'react-icons/bi';
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'; // Importing social media icons
+import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'; 
 
 const About = () => {
   return (

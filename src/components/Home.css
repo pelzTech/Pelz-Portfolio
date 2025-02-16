@@ -1,4 +1,4 @@
-/* General Container */
+
 body{
   background-color: #E7D3BB;
 }
@@ -7,7 +7,7 @@ body{
   font-family: 'Arial', sans-serif;
 }
 
-/* Welcome Section */
+
 .welcome-section {
   text-align: center;
   margin-bottom: 50px;
@@ -29,35 +29,35 @@ body{
 
 .welcome-buttons {
   gap: 20px;
-  display: flex;             /* Optional: Align buttons in a row if you have multiple */
-  justify-content: center;   /* Centering the button in parent container */
+  display: flex;             
+  justify-content: center;   
 }
 
 .btn {
-  display: flex;             /* Use flexbox for the button */
-  align-items: center;       /* Center items vertically */
+  display: flex;            
+  align-items: center;       
   padding: 10px 20px;  
   list-style: none;  
-  text-decoration: none;   /* Add padding for better spacing */
-  background-color: #61dafb; /* Background color for the button */
-  color: white;              /* Text color */
-  border: none;              /* Remove default border */
-  border-radius: 8px;       /* Rounded corners */
-  cursor: pointer;           /* Change cursor on hover */
-  font-size: 16px;          /* Font size */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  text-decoration: none;   
+  background-color: #61dafb; 
+  color: white;              
+  border: none;              
+  border-radius: 8px;       
+  cursor: pointer;           
+  font-size: 16px;         
+  transition: background-color 0.3s, transform 0.2s; 
 }
 
 .btn:hover {
-  background-color: #0056b3; /* Darken background on hover */
+  background-color: #0056b3; 
 }
 
 .icon {
   list-style: none;
   text-decoration: none;
-  margin-right: 8px; /* Space between the icon and the text */
-  font-size: 10px;  /* Icon size */
-  color: white;      /* Icon color matches text color */
+  margin-right: 8px; 
+  font-size: 10px;  
+  color: white;      
 }
 
 .welcome-text {
@@ -84,18 +84,18 @@ body{
   background-color: rgba(0, 0, 255, 0.644);
 }
 
-/* Remove text decoration and list styles */
+
 .no-decor {
   text-decoration: none;
   list-style: none;
 }
 
 .no-decor button {
-  text-decoration: none; /* In case the button inherits styles */
+  text-decoration: none; 
 }
 
 
-/* Services Section */
+
 .services-section {
   margin-top: 50px;
 }
@@ -114,10 +114,10 @@ body{
 }
 
 
-/* Responsive Media Queries for Services Grid */
+
 @media (max-width: 1200px) {
   .services-grid {
-    flex-direction: column; /* Adjust for smaller screens */
+    flex-direction: column;
   }
 }
 

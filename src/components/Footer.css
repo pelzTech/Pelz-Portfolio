@@ -1,4 +1,4 @@
-/* General Styles for Footer */
+
 .footer {
   background-color: #282c34;
   color: white;
@@ -13,22 +13,22 @@
 
 .footer-content {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap; 
   justify-content: space-between;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start; 
   width: 100%;
-  max-width: 1200px; /* Maximum width for larger screens */
-  margin: 0 auto; /* Center the content horizontally */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
-/* Footer Sections (Quick Links, Contact, Social Media) */
+
 .footer-section {
   flex: 1;
   margin: 20px;
-  min-width: 200px; /* Ensure sections are not too small */
+  min-width: 200px; 
 }
 
-/* Header for each section */
+
 .footer-section h4 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -39,7 +39,6 @@
   margin: 10px 0;
 }
 
-/* Quick Links */
 .footer-links ul,
 .footer-social ul {
   list-style: none;
@@ -61,7 +60,7 @@
   text-decoration: underline;
 }
 
-/* Contact Information */
+
 .footer-contact p {
   font-size: 16px;
 }
@@ -84,15 +83,15 @@
 
 
 
-/* Footer Form Container */
+
 .footer-form-container {
-  max-width: 600px; /* Limit the width of the form container */
-  margin: 0 auto; /* Center the form container */
+  max-width: 600px; 
+  margin: 0 auto;
   padding: 20px;
   background-color: #fff;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  text-align: center; /* Center text inside the form */
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; 
 }
 
 .footer-form-container h4 {
@@ -114,13 +113,13 @@
 }
 
 .form-input, .form-textarea {
-  width: 100%; /* Full width of the container */
+  width: 100%; 
   padding: 12px;
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box; /* Ensures padding doesn't overflow */
-  background-color: #f8f8f8; /* Light background */
+  box-sizing: border-box; 
+  background-color: #f8f8f8; 
 }
 
 .form-button2 {
@@ -132,19 +131,19 @@
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  align-self: center; /* Center the button horizontally */
+  align-self: center; 
 }
 
 .form-textarea {
-  height: 150px; /* Set height for the message area */
-  resize: none; /* Disable resizing */
+  height: 150px; 
+  resize: none; 
 }
 
 .form-button:hover {
   background-color: #4fa3f7;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1024px) {
   .footer-content {
     flex-direction: column;
@@ -153,11 +152,11 @@
 
   .footer-form-container {
     padding: 15px;
-    max-width: 100%; /* Full width on small screens */
+    max-width: 100%;
   }
 
   .footer-section {
-    flex: 1 0 100%; /* Make sections take full width on smaller screens */
+    flex: 1 0 100%; 
     text-align: center;
   }
 
@@ -167,12 +166,12 @@
   }
   
   .footer-form {
-    gap: 10px; /* Less space between inputs */
+    gap: 10px;
   }
 
   .form-input, .form-textarea {
-    font-size: 1em; /* Adjust input font size on smaller screens */
-    padding: 10px; /* Adjust padding */
+    font-size: 1em; 
+    padding: 10px; 
   }
 
 }
@@ -202,12 +201,12 @@
 
 @media (max-width: 480px) {
   .footer-form-container {
-    max-width: 100%; /* Ensure full width on mobile */
-    padding: 10px; /* Less padding on mobile */
+    max-width: 100%; 
+    padding: 10px; 
   }
 
   .form-button {
-    width: 80%; /* Button spans full width */
-    font-size: 1em; /* Adjust font size */
+    width: 80%; 
+    font-size: 1em; 
   }
 }

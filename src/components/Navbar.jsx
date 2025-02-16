@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu, GiCancel, GiSun, GiMoon } from 'react-icons/gi';
-import './Navbar.css'; // Ensure custom styles are defined here
+import './Navbar.css'; 
 import { FaCode } from 'react-icons/fa';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isLightTheme, setIsLightTheme] = useState(true); // Default to light theme
+  const [isLightTheme, setIsLightTheme] = useState(true); 
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   
@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-     <Link to="/" className="navbar-logo"> {/* Change from <a> to <Link> */}
+     <Link to="/" className="navbar-logo"> 
         <span className="logo-p">P</span>elzCode 
         <FaCode style={{ marginLeft: '8px', color: '#61dafb' }} />
       </Link>

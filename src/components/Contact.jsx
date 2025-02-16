@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import { FaUser, FaEnvelope, FaPaperPlane } from 'react-icons/fa'; // Importing icons
+import { FaUser, FaEnvelope, FaPaperPlane } from 'react-icons/fa'; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,20 +23,18 @@ const Contact = () => {
     e.preventDefault();
     console.log(formData);
     
-    // Show a confirmation message in the form of a styled alert
     setShowAlert(true);
-    
-    // Reset form fields
+  
     setFormData({
       name: '',
       email: '',
       message: ''
     });
     
-    // Hide the alert after a few seconds
+   
     setTimeout(() => {
       setShowAlert(false);
-    }, 4000);  // 4 seconds
+    }, 4000);  
   };
 
   return (
@@ -45,8 +43,7 @@ const Contact = () => {
       <p className="contact-description">
         Feel free to reach out for collaborations or just a friendly hello.
       </p>
-      
-      {/* Display the Alert Message */}
+     
       {showAlert && (
         <div className="alert">
           <p>Your message has been successfully sent. Thank you!</p>
@@ -54,7 +51,7 @@ const Contact = () => {
       )}
       
       <form onSubmit={handleSubmit} className="contact-form">
-        {/* Name Input */}
+      
         <div className="input-container">
           <FaUser className="form-icon" />
           <input
@@ -68,7 +65,7 @@ const Contact = () => {
           />
         </div>
 
-        {/* Email Input */}
+       
         <div className="input-container">
           <FaEnvelope className="form-icon" />
           <input
@@ -82,7 +79,7 @@ const Contact = () => {
           />
         </div>
 
-        {/* Message Textarea */}
+        
         <div className="input-container">
           <textarea
             name="message"
@@ -94,7 +91,7 @@ const Contact = () => {
           ></textarea>
         </div>
 
-        {/* Submit Button */}
+       
         <button type="submit" className="form-button">
           <FaPaperPlane className="form-button-icon" /> Send Message
         </button>
