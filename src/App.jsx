@@ -17,9 +17,9 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="min-h-screen bg-gray-100">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
@@ -28,7 +28,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/download-resume" element={<DownloadResume />} />
         </Routes>
-      </div>
       <Footer />
     </Router>
   );
