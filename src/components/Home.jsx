@@ -6,7 +6,7 @@ import profileImg from '../assets/images/landing.png';
 import webDevImg from '../assets/images/dev3.jpg';
 import appDevImg from '../assets/images/dev4.jpg';
 import uiUxImg from '../assets/images/dev5.jpg';
-import resumePdf from '../assets/pelzcode.pdf'; 
+import resumePdf from '../assets/pelzcode2.pdf'; 
 import './Home.css';
 
 const Home = () => {
